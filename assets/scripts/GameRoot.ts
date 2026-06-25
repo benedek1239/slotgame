@@ -1,24 +1,21 @@
-import { _decorator, Component, Node, Prefab, instantiate } from 'cc';
-import { AssetService } from './core/AssetService';
-import { SymbolView } from './view/SymbolView';
+import { _decorator, Component } from 'cc';
+import { REEL_STRIPS } from './core/SlotConfig';
+import { Rng } from './core/Rng';
+import { ReelModel } from './model/ReelModel';
+import { BoardView } from './view/BoardView';
 
 const { ccclass, property } = _decorator;
 
-// Entry point. Step 2: just spawn one symbol into a reel to verify the setup.
+// Entry point. Step 3: build reel models and fill the board with a random grid.
 @ccclass('GameRoot')
 export class GameRoot extends Component {
-    @property(AssetService) assets: AssetService = null!;
-    @property(Prefab) symbolPrefab: Prefab = null!;
-    @property(Node) testParent: Node = null!;
-    @property testSymbolId = 0; // 0=Wild, 1-4=H1-H4, 5-9=L1-L5
+    @property(BoardView) board: BoardView = null!;
+
+    private rng = new Rng();
 
     start(): void {
-        const node = instantiate(this.symbolPrefab);
-        this.testParent.addChild(node);
-        node.setPosition(0, 0, 0);
-
-        const view = node.getComponent(SymbolView)!;
-        view.bind(this.assets);
-        view.setSymbol(this.testSymbolId);
+        const reelModels = REEL_STRIPS.map((strip, i) => new ReelModel(i, strip, this.rng));
+        const grid = reelModels.map((m) => m.getVisible());
+        this.board.setGrid(grid);
     }
 }
