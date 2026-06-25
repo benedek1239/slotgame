@@ -1,0 +1,407 @@
+{"frames": {
+
+"MagicRings_00000.png":
+{
+	"frame": {"x":2356,"y":2311,"w":68,"h":390},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":283,"y":85,"w":68,"h":390},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00001.png":
+{
+	"frame": {"x":2356,"y":2405,"w":111,"h":428},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":252,"y":85,"w":111,"h":428},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00002.png":
+{
+	"frame": {"x":3542,"y":1700,"w":296,"h":496},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":160,"y":85,"w":296,"h":496},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00003.png":
+{
+	"frame": {"x":3542,"y":1998,"w":405,"h":493},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":106,"y":102,"w":405,"h":493},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00004.png":
+{
+	"frame": {"x":3542,"y":953,"w":511,"h":468},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":53,"y":128,"w":511,"h":468},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00005.png":
+{
+	"frame": {"x":2094,"y":3464,"w":555,"h":577},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":19,"w":555,"h":577},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00006.png":
+{
+	"frame": {"x":940,"y":3521,"w":570,"h":587},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":9,"w":570,"h":587},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00007.png":
+{
+	"frame": {"x":1756,"y":2874,"w":569,"h":588},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":8,"w":569,"h":588},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00008.png":
+{
+	"frame": {"x":1763,"y":1742,"w":564,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":5,"w":564,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00009.png":
+{
+	"frame": {"x":1763,"y":1169,"w":571,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":5,"w":571,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00010.png":
+{
+	"frame": {"x":1,"y":1,"w":582,"h":593},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":3,"w":582,"h":593},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00011.png":
+{
+	"frame": {"x":1763,"y":1,"w":582,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":582,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00012.png":
+{
+	"frame": {"x":2356,"y":1,"w":582,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":582,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00013.png":
+{
+	"frame": {"x":2949,"y":1,"w":582,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":582,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00014.png":
+{
+	"frame": {"x":1763,"y":585,"w":582,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":582,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00015.png":
+{
+	"frame": {"x":1170,"y":586,"w":582,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":582,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00016.png":
+{
+	"frame": {"x":2949,"y":1164,"w":576,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":576,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00017.png":
+{
+	"frame": {"x":1,"y":596,"w":583,"h":591},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":583,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00018.png":
+{
+	"frame": {"x":2356,"y":585,"w":581,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":5,"w":581,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00019.png":
+{
+	"frame": {"x":585,"y":1,"w":583,"h":591},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":583,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00020.png":
+{
+	"frame": {"x":1,"y":1189,"w":583,"h":591},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":583,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00021.png":
+{
+	"frame": {"x":1,"y":1782,"w":583,"h":591},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":583,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00022.png":
+{
+	"frame": {"x":1,"y":2375,"w":583,"h":591},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":583,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00023.png":
+{
+	"frame": {"x":1,"y":2968,"w":583,"h":591},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":583,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00024.png":
+{
+	"frame": {"x":1170,"y":1,"w":583,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":583,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00025.png":
+{
+	"frame": {"x":586,"y":594,"w":582,"h":591},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":582,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00026.png":
+{
+	"frame": {"x":2949,"y":585,"w":577,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":577,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00027.png":
+{
+	"frame": {"x":1170,"y":1740,"w":567,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":5,"w":567,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00028.png":
+{
+	"frame": {"x":2356,"y":1168,"w":575,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":5,"w":575,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00029.png":
+{
+	"frame": {"x":1170,"y":1170,"w":568,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":568,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00030.png":
+{
+	"frame": {"x":2949,"y":1742,"w":564,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":5,"w":564,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00031.png":
+{
+	"frame": {"x":2356,"y":1745,"w":564,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":5,"w":564,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00032.png":
+{
+	"frame": {"x":1763,"y":2308,"w":563,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":5,"w":563,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00033.png":
+{
+	"frame": {"x":1170,"y":2309,"w":563,"h":591},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":5,"w":563,"h":591},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00034.png":
+{
+	"frame": {"x":1529,"y":3465,"w":563,"h":589},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":7,"w":563,"h":589},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00035.png":
+{
+	"frame": {"x":586,"y":1187,"w":582,"h":589},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":582,"h":589},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00036.png":
+{
+	"frame": {"x":586,"y":2930,"w":583,"h":589},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":583,"h":589},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00037.png":
+{
+	"frame": {"x":1171,"y":2874,"w":583,"h":589},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":583,"h":589},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00038.png":
+{
+	"frame": {"x":586,"y":1778,"w":582,"h":588},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":8,"w":582,"h":588},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00039.png":
+{
+	"frame": {"x":586,"y":2368,"w":582,"h":560},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":36,"w":582,"h":560},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00040.png":
+{
+	"frame": {"x":356,"y":3561,"w":582,"h":522},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":74,"w":582,"h":522},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00041.png":
+{
+	"frame": {"x":2327,"y":2873,"w":570,"h":478},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":118,"w":570,"h":478},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00042.png":
+{
+	"frame": {"x":3542,"y":1,"w":539,"h":362},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":234,"w":539,"h":362},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00043.png":
+{
+	"frame": {"x":1,"y":3561,"w":528,"h":353},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":40,"y":243,"w":528,"h":353},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00044.png":
+{
+	"frame": {"x":3542,"y":365,"w":522,"h":296},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":47,"y":300,"w":522,"h":296},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00045.png":
+{
+	"frame": {"x":3542,"y":663,"w":519,"h":288},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":49,"y":308,"w":519,"h":288},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00046.png":
+{
+	"frame": {"x":3542,"y":1423,"w":507,"h":275},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":54,"y":320,"w":507,"h":275},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00047.png":
+{
+	"frame": {"x":2469,"y":2381,"w":487,"h":256},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":64,"y":339,"w":487,"h":256},
+	"sourceSize": {"w":593,"h":596}
+},
+"MagicRings_00048.png":
+{
+	"frame": {"x":1,"y":4091,"w":3,"h":3},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+	"sourceSize": {"w":593,"h":596}
+}},
+"animations": {
+	"MagicRings": ["MagicRings_00000.png","MagicRings_00001.png","MagicRings_00002.png","MagicRings_00003.png","MagicRings_00004.png","MagicRings_00005.png","MagicRings_00006.png","MagicRings_00007.png","MagicRings_00008.png","MagicRings_00009.png","MagicRings_00010.png","MagicRings_00011.png","MagicRings_00012.png","MagicRings_00013.png","MagicRings_00014.png","MagicRings_00015.png","MagicRings_00016.png","MagicRings_00017.png","MagicRings_00018.png","MagicRings_00019.png","MagicRings_00020.png","MagicRings_00021.png","MagicRings_00022.png","MagicRings_00023.png","MagicRings_00024.png","MagicRings_00025.png","MagicRings_00026.png","MagicRings_00027.png","MagicRings_00028.png","MagicRings_00029.png","MagicRings_00030.png","MagicRings_00031.png","MagicRings_00032.png","MagicRings_00033.png","MagicRings_00034.png","MagicRings_00035.png","MagicRings_00036.png","MagicRings_00037.png","MagicRings_00038.png","MagicRings_00039.png","MagicRings_00040.png","MagicRings_00041.png","MagicRings_00042.png","MagicRings_00043.png","MagicRings_00044.png","MagicRings_00045.png","MagicRings_00046.png","MagicRings_00047.png","MagicRings_00048.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "wild-animation.png",
+	"format": "RGBA8888",
+	"size": {"w":4096,"h":4096},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:210a3e02857b5acbc9fba5637f46114f:f0c9800c37d46e3ad962cf51fcfe4462:de696bf8d3f465a031bb26e4a137f93d$"
+}
+}
