@@ -14,11 +14,11 @@ export class BoardView extends Component {
     private reels: ReelView[] = [];
 
     onLoad(): void {
-        for (const node of this.reelNodes) {
+        this.reelNodes.forEach((node, index) => {
             const reel = node.getComponent(ReelView) ?? node.addComponent(ReelView);
-            reel.setup(this.symbolPrefab, this.assets);
+            reel.setup(index, this.symbolPrefab, this.assets);
             this.reels.push(reel);
-        }
+        });
     }
 
     // grid is number[col][row].
