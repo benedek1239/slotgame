@@ -63,7 +63,8 @@ export class ReelView extends Component {
 
         return new Promise<void>((resolve) => {
             tween(this.content)
-                .to(this.duration, { position: new Vec3(0, -this.travel, 0) }, { easing: 'cubicOut' })
+                .to(this.duration, { position: new Vec3(0, -this.travel - 30, 0) }, { easing: 'cubicOut' })
+                .to(0.15, { position: new Vec3(0, -this.travel, 0) }, { easing: 'quadOut' })
                 .call(() => resolve())
                 .start();
         });
