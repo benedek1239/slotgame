@@ -29,7 +29,7 @@ export class GameRoot extends Component {
         this.board.setGrid(reelModels.map((m) => m.getVisible()));
 
         const reelControllers = reelModels.map((m, i) => new ReelController(m, this.board.getReels()[i]));
-        this.controller = new GameController(this.bus, model, reelControllers);
+        this.controller = new GameController(this.bus, model, reelControllers, this.board);
 
         model.broadcast();
     }

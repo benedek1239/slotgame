@@ -39,6 +39,11 @@ export class ReelView extends Component {
     private idleIndex(row: number): number { return (ROWS - 1) - row; }   // initial window
     private resultIndex(row: number): number { return this.stripLen - 1 - row; } // final window
 
+    // The tile shown at a visible row (0=top) after the reel has stopped.
+    getResultTile(row: number): SymbolView {
+        return this.tiles[this.resultIndex(row)];
+    }
+
     setVisible(symbols: number[]): void {
         this.prevVisible = symbols.slice();
         for (let row = 0; row < ROWS; row++) this.tiles[this.idleIndex(row)].setSymbol(symbols[row]);
