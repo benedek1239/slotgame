@@ -1,11 +1,12 @@
 import { EventBus, GameEvent } from '../core/EventBus';
+import { AudioService } from '../core/AudioService';
 import { SlotModel } from '../model/SlotModel';
 import { WinEvaluator } from '../model/WinEvaluator';
 import { ReelController } from './ReelController';
 import { BoardView } from '../view/BoardView';
 
 // Orchestrates a spin: charge bet -> spin reels -> assemble grid -> evaluate ->
-// settle credits/win -> highlight winning lines.
+// settle credits/win -> highlight winning lines -> play sfx.
 export class GameController {
     private readonly evaluator = new WinEvaluator();
 
@@ -14,6 +15,7 @@ export class GameController {
         private readonly model: SlotModel,
         private readonly reels: ReelController[],
         private readonly board: BoardView,
+        private readonly audio: AudioService,
     ) {
         this.bus.on(GameEvent.SpinRequested, () => void this.spin());
     }
@@ -24,14 +26,20 @@ export class GameController {
         this.model.beginSpin();
         this.board.clearHighlights();
 
-        const columns = await Promise.all(this.reels.map((r) => r.spin())); // number[col][row]
+        // Each reel plays a stop sfx as it lands; assemble the grid when all stop.
+        const columns = await Promise.all(
+            this.reels.map((r) => r.spin().then((col) => { this.audio.play('reelStop'); return col; })),
+        );
         this.model.setGrid(columns);
 
         const wins = this.evaluator.evaluate(columns);
         const total = wins.reduce((sum, w) => sum + w.amount, 0);
         this.model.settleSpin(total);
 
-        if (wins.length > 0) this.board.highlightWins(wins);
+        if (wins.length > 0) {
+            this.board.highlightWins(wins);
+            this.audio.play('win');
+        }
         this.bus.emit(GameEvent.SpinResolved, { wins, grid: columns });
     }
 }

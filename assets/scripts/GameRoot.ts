@@ -4,6 +4,7 @@ import { Rng } from './core/Rng';
 import { EventBus } from './core/EventBus';
 import { ReelModel } from './model/ReelModel';
 import { SlotModel } from './model/SlotModel';
+import { AudioService } from './core/AudioService';
 import { BoardView } from './view/BoardView';
 import { HudView } from './view/HudView';
 import { ReelController } from './controller/ReelController';
@@ -16,6 +17,7 @@ const { ccclass, property } = _decorator;
 export class GameRoot extends Component {
     @property(BoardView) board: BoardView = null!;
     @property(HudView) hud: HudView = null!;
+    @property(AudioService) audio: AudioService = null!;
 
     private rng = new Rng();
     private bus = new EventBus();
@@ -29,7 +31,7 @@ export class GameRoot extends Component {
         this.board.setGrid(reelModels.map((m) => m.getVisible()));
 
         const reelControllers = reelModels.map((m, i) => new ReelController(m, this.board.getReels()[i]));
-        this.controller = new GameController(this.bus, model, reelControllers, this.board);
+        this.controller = new GameController(this.bus, model, reelControllers, this.board, this.audio);
 
         model.broadcast();
     }
