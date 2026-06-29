@@ -1,4 +1,5 @@
 import { EventBus, GameEvent } from '../core/EventBus';
+import { WILD_ID } from '../core/SlotConfig';
 import { AudioService } from '../core/AudioService';
 import { SlotModel } from '../model/SlotModel';
 import { WinEvaluator } from '../model/WinEvaluator';
@@ -23,6 +24,7 @@ export class GameController {
     private async spin(): Promise<void> {
         if (!this.model.canSpin()) return;
 
+        this.audio.stopWild(); // cut any lingering wild sound from the previous spin
         this.model.beginSpin();
         this.board.clearHighlights();
 
@@ -39,6 +41,13 @@ export class GameController {
         if (wins.length > 0) {
             this.board.highlightWins(wins);
             this.audio.play('win');
+        }
+
+        // Only celebrate when a win actually used a wild.
+        const wildInWin = wins.some((w) => w.cells.some(([col, row]) => columns[col][row] === WILD_ID));
+        if (wildInWin) {
+            this.audio.playWild();
+            this.bus.emit(GameEvent.WildAppeared);
         }
         this.bus.emit(GameEvent.SpinResolved, { wins, grid: columns });
     }

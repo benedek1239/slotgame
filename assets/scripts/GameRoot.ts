@@ -7,6 +7,7 @@ import { SlotModel } from './model/SlotModel';
 import { AudioService } from './core/AudioService';
 import { BoardView } from './view/BoardView';
 import { HudView } from './view/HudView';
+import { WildFxView } from './view/WildFxView';
 import { ReelController } from './controller/ReelController';
 import { GameController } from './controller/GameController';
 
@@ -18,6 +19,7 @@ export class GameRoot extends Component {
     @property(BoardView) board: BoardView = null!;
     @property(HudView) hud: HudView = null!;
     @property(AudioService) audio: AudioService = null!;
+    @property(WildFxView) wildFx: WildFxView = null!;
 
     private rng = new Rng();
     private bus = new EventBus();
@@ -26,6 +28,7 @@ export class GameRoot extends Component {
     start(): void {
         const model = new SlotModel(this.bus);
         this.hud.init(this.bus);
+        this.wildFx.init(this.bus);
 
         const reelModels = REEL_STRIPS.map((strip, i) => new ReelModel(i, strip, this.rng));
         this.board.setGrid(reelModels.map((m) => m.getVisible()));

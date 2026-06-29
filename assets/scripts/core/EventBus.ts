@@ -8,6 +8,7 @@ export enum GameEvent {
     SpinStateChanged = 'spin-state-changed',// { spinning }
     SpinRequested = 'spin-requested',       // (none) — from the HUD
     SpinResolved = 'spin-resolved',         // { wins, grid }
+    WildAppeared = 'wild-appeared',         // (none) — a wild is on the resolved board
 }
 
 type Handler = (payload?: any) => void;
